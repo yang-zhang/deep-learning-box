@@ -72,7 +72,11 @@ sudo apt-get install openssh-server
 sudo service ssh status
 ```
 
-You can now ssh to the box using `ssh user_dl_box@hostname` and the password of the box.
+You can now ssh to the box using `ssh user_dl_box@hostname` and the password of the box, and can ssh into its running Jupyter notebook:
+
+```sh
+ssh -NL 8887:localhost:8887 user_dl_box@hostname
+```
 
 References:
 - https://askubuntu.com/questions/140236/can-i-access-my-home-pc-from-the-office-with-ssh
