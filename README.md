@@ -58,6 +58,8 @@ export LIBRARY_PATH=/usr/local/cuda-9.0/lib64${LIBRARY_PATH:+:${LIBRARY_PATH}}
 References:
 - https://medium.com/towards-data-science/building-your-own-deep-learning-box-47b918aea1eb
 - https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1604&target_type=debnetwork
+- https://blog.slavv.com/the-1700-great-deep-learning-box-assembly-setup-and-benchmarks-148c5ebe6415
+- https://github.com/fastai/courses/blob/master/setup/install-gpu.sh
 
 ### Setup ssh
 Find out default gateway using `route -n`. For example `192.168.1.1`. Go to this IP in browser, end username and password (e.g., `admin`, `admin`).
