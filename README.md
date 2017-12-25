@@ -80,6 +80,11 @@ You can now ssh to the box using `ssh user_dl_box@hostname` and the password of 
 ssh -NL 8887:localhost:8887 user_dl_box@hostname
 ```
 
+To ssh into tensorboard, run docker with option `-p 6006:6006` and ssh into tensorboard:
+```sh
+ssh -N -L 6006:0.0.0.0:6006  user_dl_box@hostname
+```
+
 References:
 - https://askubuntu.com/questions/140236/can-i-access-my-home-pc-from-the-office-with-ssh
 - https://www.pcworld.com/article/244314/how_to_forward_ports_on_your_router.html
